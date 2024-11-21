@@ -23,6 +23,7 @@ def handle_message(message):
         bot.reply_to(message, f"Произошла ошибка: {str(e)}")
 
 def main():
+    bot.delete_webhook()
     bot.polling(none_stop=True)
 
 if __name__ == "__main__":
